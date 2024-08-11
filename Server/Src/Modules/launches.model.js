@@ -12,7 +12,7 @@ const launch={
        
 }
 
-launches.set(launch.flightNumber,launches)
+launches.set(launch.flightNumber,launch)
 
 module.exports={
     launches,
