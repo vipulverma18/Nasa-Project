@@ -6,6 +6,7 @@
 
     "client": "npm start --prefix client",
     "server": "npm run watch --prefix server ",
+    "deploy":"npm run build --prefix client && npm start --prefix server",
     "watch": "concurrently \"npm run server\" \"npm run client\"",
     "test": "npm run test --server"
   },
