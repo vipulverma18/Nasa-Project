@@ -11,7 +11,7 @@ const launch =req.body;
 if(!launch.mission || !launch.target ||!launch.rocket ||!launch.launchDate)
 {
     return res.status(400).json({
-        'error':'Missing required launch property'
+        error:'Missing required launch property'
     })
 }
 launch.launchDate=new Date(launch.launchDate)
